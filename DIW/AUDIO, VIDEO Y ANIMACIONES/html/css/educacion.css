@@ -1,0 +1,127 @@
+@font-face{
+    font-family: 'WhiteDream';
+    src: url(./fonts/WhiteDream.ttf);
+}
+@font-face{
+    font-family: 'Stardust';
+    src: url(./fonts/Stardust.ttf);
+}
+@font-face{
+    font-family: 'SolidSoldier';
+    src: url(./fonts/SolidSoldier.ttf);
+}
+html, body{
+    width: 99.6%;
+    height: 97.7%;
+}
+.Padre{
+    width: 100%;
+    height: 100%;
+}
+.Cabecera{
+    width: 82%;
+    height: 10%;
+    text-align: right;
+    background-image: url('../img/cabecera.jpg');
+    background-size: contain;
+    float: left;
+}
+.Cabecera2{
+    width: 18%;
+    height: 10%;
+    text-align: right;
+    background-color: black;
+    float: left;
+}
+.Cabecera2 p{
+    margin-top: 5%;
+    padding-right: 5%;
+    font-family: 'WhiteDream';
+    font-size: x-large;
+    color: #6Be1FF;
+}
+.imagen{
+    height: 100%;
+    background-repeat: repeat-y;
+}
+.Navegacion{
+    width: 100%;
+    height: 10%;
+    background-color: #25CDF7;
+    text-align: center;
+    float: left;
+}
+.Navegacion button{
+    width: 20%;
+    height: 100%;
+    font-family: 'SolidSoldier';
+    background-color: #25CDF7;
+    color: white;
+    border: black 0px solid;
+    font-size: x-large;
+}
+.Navegacion button:hover{
+    background-color: #098AAB;
+}
+.Cuerpo{
+    width: 100%;
+    height: 70%;
+    font-family: 'Stardust';
+    background-color: cadetblue;
+    font-size: x-large;
+}
+.Contenido{
+    width: 100%;
+    height: 100%;
+    background-color: #25CDF7;
+    float: left;
+}
+.Contenido h2{
+    text-align: center;
+    font-family: 'SolidSoldier';
+}
+.Contenido table{
+    margin: auto;
+}
+.Pie{
+    width: 100%;
+    height: 10%;
+    background-color: #25CDF7;
+    float: left;
+    padding-top: 1%;
+}
+.Pie img{
+    width: 3%;
+    height: 70%;
+    margin: 0.5%;
+    align-items: center;
+    float: left;
+    border-radius: 10px;
+}
+.Pie #s{
+    width: auto;
+    height: auto;
+    margin: 0.5%;
+    align-content: left;
+    float: left;
+}
+.Pie #p{
+    width: auto;
+    height: auto;
+    margin: 0.5%;
+    align-content: left;
+    float: left;
+}
+.Pie a{
+    width: auto;
+    height: auto;
+    margin: 0.5%;
+    align-content: center;
+    float: right;
+}
+.Pie a img{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+

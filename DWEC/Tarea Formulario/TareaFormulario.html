@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sitio Web Personal - Saúl Alonso Sánchez </title>
+    <link rel="stylesheet" href="./TareaFormulario.css">
+</head>
+
+<body>
+    <div class="Padre">
+
+        <div class="Cuerpo">
+            <table>
+                <form id="formulario" name="formulario">
+                    <tr>
+                        <td>Nombre: *</td>
+                        <td><input type="text" id="nombre" size="55%" placeholder="Escriba su nombre"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos: *</td>
+                        <td><input type="text" id="apellidos" size="55%" placeholder="Escriba sus apellidos"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Dirección e-mail: *</td>
+                        <td><input type="email" id="email" size="55%" placeholder="Escriba su correo electronico"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña: *</td>
+                        <td><input type="password" id="pass" size="55%" placeholder="Escriba su contraseña"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Repita Contraseña: *</td>
+                        <td><input type="password" id="passR" size="55%" placeholder="Repita su contraseña"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono: *</td>
+                        <td><input type="tel" id="telefono" size="55%" placeholder="Escriba su telefono"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Nacimiento: *</td>
+                        <td><input type="date" id="cumple" size="55%" placeholder="Escriba su fecha de nacimiento"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo: *</td>
+                        <td><input type="radio" name="sexo" size="55%">Hombre <input type="radio" name="sexo"
+                                size="55%">Mujer<br></td>
+                    </tr>
+                    <tr>
+                        <td>Nacionalidad: *</td>
+                        <td><select id="nacio">
+                                <option>Elige una</option>
+                                <option>Espana</option>
+                                <option>Francia</option>
+                                <option>Inglaterra</option>
+                                <option>Rusia</option>
+                                <option>Otro pais</option>
+                            </select><br></td>
+                    </tr>
+                    <tr>
+                        <td>Idiomas: *(seleccione al menos )</td>
+                        <td><input type="checkbox" id="ingles">Ingles<input type="checkbox" id="frances">Francés<input
+                                type="checkbox" id="aleman">Alemán<br></td>
+                    </tr>
+                    <tr>
+                        <td>Subcribirme a las noticias:</td>
+                        <td> <input type="checkbox" id="sub">Subcribirme<br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="Registrar Usuario" id="regis"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="TareaFormulario.js"></script>
+
+</html>

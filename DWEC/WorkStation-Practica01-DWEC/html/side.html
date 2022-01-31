@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>side</title>
+</head>
+
+<!--frameset is not supported in HTML5-->
+
+<body id="cuerpo">
+
+  <form action="#">
+
+    <h2>Mi lista de tareas:</h2>
+    <textarea name="" value="" id="txtTarea" rows="5" cols="30"></textarea>
+    <br>
+    <input type="button" value="Añadir a la lista" onclick="anadirTarea()" title="Añade Tareas">
+    <input type="button" value="Limpiar lista" onclick="limpiar()" title="Limpiar">
+  </form>
+
+  <ul id="listaTareas">
+  </ul>
+
+  <h2>¿Como estas de humor hoy?</h2>
+  <select id="animo" onclick="fondo()">
+    <option value="0">Ni fu ni fa</option>
+    <option value="1">Feliz</option>
+    <option value="2">Cabreado</option>
+  </select>
+
+</body>
+
+<script src="side.js">
+</script>
+
+</html>

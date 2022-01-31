@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aficiones</title>
+    <link rel="stylesheet" href="./css/aficiones.css">
+    <style>
+        table {
+            border: black 0px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./js/body.js"></script>
+    <div class="Padre">
+        <div class="Cabecera">
+        </div>
+        <div class="Cabecera2">
+            <p class="Nombre">Saúl Alonso Sánchez</p>
+        </div>
+        <div class="Navegacion">
+            <a href="./principal.html"><button>Presentacion</button></a>
+            <a href="./educacion.html"><button>Educación</button></a>
+            <a href="./aficiones.html"><button>Workstation</button></a>
+            <a href="./galeria.html"><button>Galeria</button></a>
+        </div>
+        <div class="Cuerpo">
+            <div class="Contenido">
+
+                <div id="header">
+
+                    <p id="tintulo"></p>
+                    <script src="./js/js.js"></script>
+                </div>
+                <div id="side">
+                    <form action="#">
+                        <h2>Mi lista de tareas:</h2>
+                        <textarea name="" value="" id="txtTarea" rows="5" cols="30"></textarea>
+                        <br>
+                        <input type="button" value="Añadir a la lista" onclick="anadirTarea()" title="Añade Tareas">
+                        <input type="button" value="Limpiar lista" onclick="limpiar()" title="Limpiar">
+                    </form>
+
+                    <ul id="listaTareas">
+                    </ul>
+
+                    <h2>¿Como estas de humor hoy?</h2>
+                    <select id="animo" onclick="fondo()">
+                        <option value="0">Ni fu ni fa</option>
+                        <option value="1">Feliz</option>
+                        <option value="2">Cabreado</option>
+                    </select>
+                </div>
+                <div id="body">
+                    <button onclick="play()" id="play">Música de Fondo</button>
+                    <button onclick="pause()" id="pause">PARAR Música de Fondo</button>
+                    <audio autoplay loop id="musica"> <source src='./js/sample3.mp3' type='audio/mp3'> </audio>
+                    Filtrar por:
+                    <select id="curso" onclick=mostrarTabla()>
+                        <option value="0" aria-checked="true">Nada</option>
+                        <option value="1">1º Curso</option>
+                        <option value="2">2º Curso</option>
+                        <option value="3">Todos los cursos</option>
+                        <option value="4">Multimedia</option>
+                    </select>
+                    <h1 id="titulo">
+                    </h1>
+                    <table id="tabla" border="black 0px solid"></table>
+                    <b id="video"></b>
+
+                </div>
+                <div id="footer">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="Pie">
+            <a href="./principal.html" id="s"><img src="./img/S.PNG" width="50px" height="50px"></a>
+            <a href="./politica.html" id="p"><p>Politica de terminos y condiciones</p></a>
+            <b id="relojito"></b>
+            <script src="./js/footer.js"></script>
+            <a href="www.google.es"><img src="./img/facebook.png" width="50px" height="50px"></a>
+            <a href="www.google.es"><img src="./img/twitter.png" width="50px" height="50px"></a>
+        </div>
+    </div>
+</body>
+
+</html>

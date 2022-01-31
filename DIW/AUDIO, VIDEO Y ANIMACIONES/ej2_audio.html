@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>ej2_audio </title>
+    <link rel="stylesheet" href="./css/ej1_audio.css">
+</head>
+<body>
+    <button onclick="play()" id="play">Música de Fondo</button>
+    <button onclick="pause()" id="pause">PARAR Música de Fondo</button>
+    <br>
+    <audio controls autoplay loop id="musica"> <source src='sample3.mp3' type='audio/mp3'> </audio>
+    <br>
+    <a href="sample3.mp3" download="sound.mp3"><button>Descargar musica</button></a>
+    <script>
+        document.getElementById("play").addEventListener(click,play,false);
+        document.getElementById("pause").addEventListener(click,pause,false);
+        function play() {
+            document.getElementById("musica").play();
+        }
+        function pause() {
+            document.getElementById("musica").pause();
+        }
+    </script>
+</body>
+
+</html>
