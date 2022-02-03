@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // crear nodo div
+        var div = document.createElement("div");
+        // crear id del div
+        div.id = "myId";
+        // crear nodo de contenido 
+        var contenido = document.createTextNode("Texto del parrafo");
+        //enlazar el nodo del texto con el nodo de la etiqueta
+        div.appendChild(contenido);
+        //enlazar el nodo del contenido con el body
+        document.body.appendChild(div);
+        //
+        var p = document.createElement("p");
+        p.id = "pId";
+        var contenido2 = document.createTextNode("Segundo Texto");
+        p.appendChild(contenido2);
+        div.appendChild(p);
+        document.body.appendChild(p);
+        
+        var input = document.createElement("input");
+        input.type = "text";
+        p.appendChild(input);
+        //for de botones
+        var div2 = document.createElement("div");
+        div2.className = "invisible";
+        document.body.appendChild(div2);
+        for (let i = 0; i < 50; i++) {
+            var button = document.createElement("button");
+            button.textContent = (i + 1);
+            document.body.appendChild(button); 
+            div2.appendChild(button);
+        }
+        var buttons = document.createElement("button");
+        buttons.textContent = "Invisible";
+        document.body.appendChild(buttons);
+        
+        var buttons = document.createElement("button");
+        buttons.textContent = "Visible";
+        buttons.id = "b1";
+        document.body.appendChild(buttons);
+        document.getElementById("b1").addEventListener("click",swap);
+        function swap() {
+            if (div2.className == "visible") {
+                div2.className = "invisible";
+            }else {div2.className = "visible"};
+            
+        }
+            
+                 
+        </script>
+        <style>
+            .visible {
+                visibility:visible;
+            }
+            .invisible{
+                visibility:hidden;
+            }
+        </style>
+</body>
+</html>

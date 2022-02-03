@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Boton">Botón</button>
+</body>
+    <script>
+        document.getElementById('Boton').addEventListener('click', gestionarClick, false);
+        function gestionarClick(miEvento) {
+            console.log(miEvento.type); //tipo de evento que en este cao es click   
+            console.log(miEvento);
+           }
+    </script>
+</html>

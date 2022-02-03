@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var div2 = document.createElement("div");
+        div2.className = "invisible";
+        div2.id = "area";
+        document.body.appendChild(div2);
+        for (let i = 0; i < 50; i++) {
+            var button = document.createElement("button");
+            button.id = (i);
+            button.textContent = (i + 1);
+            document.body.appendChild(button); 
+            div2.appendChild(button);
+            document.getElementById(i).addEventListener('click', gestionarClick, false);
+            function gestionarClick(miEvento) {
+                console.log(miEvento.type); //tipo de evento que en este cao es click   
+                console.log(miEvento);
+                alert("Hola soy el contenedor " + (i +1) );
+        }
+           }
+           function gestionarClick2(miEvento2) {
+            console.log(miEvento2.type);
+            console.log(miEvento2);
+            alert("Has pulsado en el contenedor")
+           }
+           document.getElementById('area').addEventListener('click', gestionarClick2, false);
+</script>
+</html>
